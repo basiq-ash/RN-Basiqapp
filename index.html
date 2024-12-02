@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Redirecting...</title>
+  <script>
+    window.onload = function() {
+      // Replace 'myapp' with your app's custom scheme
+      window.location.href = "myapp://callback";
+      
+      // Optional: Fallback in case the app isn't installed
+      setTimeout(function() {
+        window.location.href = "https://av-demo.basiq.io"; // Redirect to a fallback page or website
+      }, 2000); // Wait 2 seconds before redirecting to the fallback
+    };
+  </script>
+</head>
+<body>
+  Redirecting to your app...
+</body>
+</html>
